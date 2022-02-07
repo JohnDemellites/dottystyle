@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.btn {
+  width: fit-content;
+  padding: 19px 76px;
+  outline: none;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 22px 21px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s all; }
+  .btn:active {
+    transform: translateY(2px); }
+
+.primary {
+  color: #ffffff;
+  background-color: #F6914E; }
+
+.success {
+  color: #ffffff;
+  background-color: #3C562C; }
+
+.outline {
+  color: #000000;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none; }
+
+.small-padding {
+  padding: 9px 37px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 50px; }
+
+h3 {
+  font-size: 14px;
+  font-weight: 100; }
+
+.mb-21 {
+  margin-bottom: 21px; }
+
+.mb-47 {
+  margin-bottom: 47px; }
+
+.mb-26 {
+  margin-bottom: 26px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-34 {
+  margin-bottom: 34px; }
+
+.mw-430 {
+  max-width: 430px; }
+
+.mw-230 {
+  max-width: 230px; }
+
+.title {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.align-top {
+  align-items: flex-start !important; }
+
+button:active {
+  transition: 0.3s all; }
+  button:active:active {
+    transform: translateY(2px); }
+
+#navbar {
+  background-color: #333333;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  padding: 0px 32px;
+  justify-content: center;
+  gap: 170px;
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+  #navbar .navigation {
+    display: flex;
+    align-items: center;
+    gap: 11px; }
+    #navbar .navigation .play-button {
+      height: 36px;
+      width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #282828;
+      outline: none;
+      border-style: none;
+      cursor: pointer; }
+    #navbar .navigation .divider {
+      height: 46px;
+      width: 1px;
+      background-color: #484848; }
+    #navbar .navigation button {
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      cursor: pointer; }
+  #navbar .download-board {
+    padding: 6px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #282828;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px; }
+    #navbar .download-board .download-icon {
+      margin-right: 9px; }
+
+.background {
+  min-height: 2873px;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  position: relative; }
+  .background::before {
+    content: "";
+    background-image: linear-gradient(transparent, #1b536f calc(100vw - 10%));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px; }
+
+.section-indication {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  gap: 15px;
+  z-index: 1; }
+  .section-indication .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer; }
+  .section-indication .white-circle {
+    background-color: #FFFFFF; }
+
+section {
+  position: inherit;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  section .flex {
+    display: flex;
+    align-items: center; }
+    section .flex .box {
+      margin-top: -62px;
+      width: 403px;
+      height: 160px;
+      background-color: #000000;
+      border-radius: 10px; }
+  section .gap-132 {
+    gap: 132px; }
+  section .gap-180 {
+    gap: 180px; }
+  section .gap-65 {
+    gap: 65px; }
+  section .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px; }
+    section .button-group button {
+      font-size: 14px;
+      border-style: none;
+      border-radius: 10px;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 12px 5px; }
+  section .view-project-button {
+    margin-top: 190px;
+    background-color: #178bc1;
+    border-radius: 10px;
+    border-style: none;
+    padding: 18px 50px;
+    cursor: pointer; }
+  section .play {
+    cursor: pointer;
+    transition: 0.3s all; }
+    section .play:active {
+      transform: translateY(2px); }
