@@ -165,12 +165,14 @@ section {
   .flex {
     display: flex;
     align-items: center;
-    .box {
+    .content {
       margin-top: -62px;
       width: 403px;
-      height: 160px;
-      background-color: #000000;
-      border-radius: 10px;
+      display: flex;
+      .child-content {
+        width: 100%;
+        border-radius: 10px;
+      }
     }
   }
   .gap-132 {
@@ -196,6 +198,9 @@ section {
       background-color: transparent;
       cursor: pointer;
       padding: 12px 5px;
+    }
+    .selected {
+      background-color: #1a3e4e;
     }
   }
   .view-project-button {

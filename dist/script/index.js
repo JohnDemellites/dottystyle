@@ -1,51 +1,3 @@
-$("#background-button").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#second-section").offset().top
-    }, 1000);
-});
-
-$("#solution-button").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#third-section").offset().top
-    }, 1000);
-});
-
-$("#results-button").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#fourth-section").offset().top
-    }, 1000);
-});
-
-$("#slideshow-button").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#fourth-section").offset().top
-    }, 1000);
-});
-
-$("#circle-1").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#first-section").offset().top
-    }, 1000);
-});
-
-$("#circle-2").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#second-section").offset().top
-    }, 1000);
-});
-
-$("#circle-3").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#third-section").offset().top
-    }, 1000);
-});
-
-$("#circle-4").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#fourth-section").offset().top
-    }, 1000);
-});
-
 $(document).ready(function () {
     currentSection()
 })
@@ -81,4 +33,39 @@ function currentSection() {
     } else {
         $("#circle-4").removeClass("white-circle");
     }
+}
+
+function select(a) {
+    let element = $('.button-group').find(`.selected`)
+    let selectedElement = $('.button-group').find(`#${a}`)
+    $(element).removeClass("selected")
+    $(selectedElement).addClass("selected")
+
+    let containerElement = $('.flex').find(`.content`)
+    $(containerElement).empty()
+
+    if (a === 'photo') {
+        $(containerElement).append("<img src='./img/samplephoto.jpg' class='child-content' />")
+    }
+    if (a === 'social') {
+        $(containerElement).append("<img src='./img/samplesocial.jpg' class='child-content' />")
+    }
+    if (a === 'pr') {
+        $(containerElement).append("<img src='./img/samplepr.jpg' class='child-content' />")
+    }
+    if (a === 'radio') {
+        $(containerElement).append("<img src='./img/sampleradio.jpg' class='child-content' />")
+    }
+    if (a === 'video') {
+        $(containerElement).append(`<iframe class='child-content' width='100%' height='250px' src='https://www.youtube.com/embed/K4TOrB7at0Y'
+    title='YouTube video player' frameborder='0'
+    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    allowfullscreen></iframe>`)
+    }
+}
+
+function scrollToElement(element) {
+    $('html, body').animate({
+        scrollTop: $(element).offset().top
+    }, 1000);
 }

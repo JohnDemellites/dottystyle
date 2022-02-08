@@ -23,19 +23,19 @@
                     </span>
                 </button>
                 <div class="divider"></div>
-                <button id="background-button">
+                <button onclick="scrollToElement('#second-section')">
                     Background & Challenge
                 </button>
                 <div class="divider"></div>
-                <button id="solution-button">
+                <button onclick="scrollToElement('#third-section')">
                     Solution
                 </button>
                 <div class="divider"></div>
-                <button id="results-button">
+                <button onclick="scrollToElement('#fourth-section')">
                     Results & Effectivesness
                 </button>
                 <div class="divider"></div>
-                <button id="slideshow-button">
+                <button onclick="scrollToElement('#fourth-section')">
                     Slideshow
                 </button>
             </div>
@@ -47,10 +47,10 @@
             </button>
         </div>
         <div class="section-indication">
-          <div id="circle-1" class="circle"></div>
-          <div id="circle-2" class="circle"></div>
-          <div id="circle-3" class="circle"></div>
-          <div id="circle-4" class="circle"></div>
+            <div id="circle-1" class="circle" onclick="scrollToElement('#first-section')"></div>
+            <div id="circle-2" class="circle" onclick="scrollToElement('#second-section')"></div>
+            <div id="circle-3" class="circle" onclick="scrollToElement('#third-section')"></div>
+            <div id="circle-4" class="circle" onclick="scrollToElement('#fourth-section')"></div>
         </div>
         <section id="first-section">
             <div class="container">
@@ -123,14 +123,19 @@
         <section id="fourth-section">
             <div class="container">
                 <div class="button-group">
-                    <button>Video</button>
-                    <button>Photography</button>
-                    <button>Social</button>
-                    <button>PR</button>
-                    <button>Radio</button>
+                    <button id="video" onclick="select('video')" class="selected">Video</button>
+                    <button id="photo" onclick="select('photo')">Photography</button>
+                    <button id="social" onclick="select('social')">Social</button>
+                    <button id="pr" onclick="select('pr')">PR</button>
+                    <button id="radio" onclick="select('radio')">Radio</button>
                 </div>
                 <div class="flex gap-180 align-top">
-                    <div class="box"></div>
+                    <div class="content">
+                        <iframe class='child-content' width="100%" height='250px' src="https://www.youtube.com/embed/K4TOrB7at0Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                     <h3 class="mw-230">Live reads from NOVA presenters reflected the ever-evolving story of Jake in real
                         time, and
                         encouraged people to get involved to shape the story themselves.

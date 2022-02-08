@@ -179,12 +179,13 @@ section {
   section .flex {
     display: flex;
     align-items: center; }
-    section .flex .box {
+    section .flex .content {
       margin-top: -62px;
       width: 403px;
-      height: 160px;
-      background-color: #000000;
-      border-radius: 10px; }
+      display: flex; }
+      section .flex .content .child-content {
+        width: 100%;
+        border-radius: 10px; }
   section .gap-132 {
     gap: 132px; }
   section .gap-180 {
@@ -205,6 +206,8 @@ section {
       background-color: transparent;
       cursor: pointer;
       padding: 12px 5px; }
+    section .button-group .selected {
+      background-color: #1a3e4e; }
   section .view-project-button {
     margin-top: 190px;
     background-color: #178bc1;
